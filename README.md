@@ -40,3 +40,7 @@ Feel free to fork this project and contribute with more patterns, examples, or i
 ## 🖋️ Author
 
 Alejandro Pla Cambra from OpositaTest.
+
+## 🌟 License
+
+MIT
