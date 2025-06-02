@@ -9,7 +9,7 @@ It focuses on learning and applying **Design Patterns** in modern **React (v18/1
 
 - [SOLID Principles](./docs/solid-principles.md)
 
-### 📚 Design Patterns
+### 🧩 Design Patterns
 
 #### 🔨 Creational Patterns
 - [Factory Method](./docs/creational/factory-method.md)

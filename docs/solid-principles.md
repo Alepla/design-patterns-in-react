@@ -127,8 +127,8 @@ const PasswordInput = (props) => (
 <TextInput value="longpassword" onChange={handleChange} />
 <PasswordInput value="longpassword" onChange={handleChange} />
 ```
-✅ `PasswordInput` can safely replace `TextInput` without introducing unexpected behavior.
-✅ Follows **LSP**: Subclasses (or component variants) should respect the contract of the base class (or component).
+- ✅ `PasswordInput` can safely replace `TextInput` without introducing unexpected behavior.
+- ✅ Follows **LSP**: Subclasses (or component variants) should respect the contract of the base class (or component).
 
 ### 4️⃣ Interface Segregation Principle (ISP)
 
