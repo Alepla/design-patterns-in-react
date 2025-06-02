@@ -3,16 +3,22 @@
 This project is a personal study based on the book *Dive Into Design Patterns* by Alexander Shvets.  
 It focuses on learning and applying **Design Patterns** in modern **React (v18/19)** projects, with practical code examples and Markdown documentation.
 
-## 📚 Patterns covered
+## 📚 Contents
 
-### Creational Patterns
+### 🧱 SOLID Principles
+
+- [SOLID Principles](./docs/solid-principles.md)
+
+### 📚 Design Patterns
+
+#### 🔨 Creational Patterns
 - [Factory Method](./docs/creational/factory-method.md)
 - [Abstract Factory](./docs/creational/abstract-factory.md)
 - [Builder](./docs/creational/builder.md)
 - [Prototype](./docs/creational/prototype.md)
 - [Singleton](./docs/creational/singleton.md)
 
-### Structural Patterns (to be added)
+#### 🏗️ Structural Patterns (to be added)
 - Adapter
 - Bridge
 - Composite
@@ -21,7 +27,7 @@ It focuses on learning and applying **Design Patterns** in modern **React (v18/1
 - Flyweight
 - Proxy
 
-### Behavioral Patterns (to be added)
+#### 🔄 Behavioral Patterns (to be added)
 - Chain of Responsibility
 - Command
 - Iterator
