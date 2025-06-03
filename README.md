@@ -18,14 +18,14 @@ It focuses on learning and applying **Design Patterns** in modern **React (v18/1
 - [Prototype](./docs/creational/prototype.md)
 - [Singleton](./docs/creational/singleton.md)
 
-#### 🏗️ Structural Patterns (to be added)
-- Adapter
-- Bridge
-- Composite
-- Decorator
-- Facade
-- Flyweight
-- Proxy
+#### 🏗️ Structural Patterns
+- [Adapter](./docs/structural/adapter.md)
+- [Bridge](./docs/structural/bridge.md)
+- [Composite](./docs/structural/composite.md)
+- [Decorator](./docs/structural/decorator.md)
+- [Facade](./docs/structural/facade.md)
+- [Flyweight](./docs/structural/flyweight.md)
+- [Proxy](./docs/structural/proxy.md)
 
 #### 🔄 Behavioral Patterns (to be added)
 - Chain of Responsibility

@@ -1,6 +1,6 @@
-# Creational Patterns in Software Design
+# Creational Design Patterns in React
 
-This section provides an overview of **creational design patterns** based on the book *Dive Into Design Patterns* by Alexander Shvets.  
+This section provides an overview of **Creational Design Patterns** based on the book *Dive Into Design Patterns* by Alexander Shvets.  
 Each pattern addresses object creation in different ways to improve flexibility and reusability.  
 You will also find **React (v18/19)** examples for practical implementation.
 
