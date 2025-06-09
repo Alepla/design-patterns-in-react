@@ -12,15 +12,15 @@ export const App = () => {
 
   return (
     <div style={{ padding: 20 }}>
-      <h1>Structural Patterns Demo</h1>
+      <h1>🏗️ Structural Patterns Demo</h1>
 
-      <h2>Adapter</h2>
+      <h2>🔌 Adapter</h2>
       <AdaptedButton onClick={() => alert('Adapted!')} label="Adapt" />
 
-      <h2>Bridge</h2>
+      <h2>🌉 Bridge</h2>
       <ThemedCard theme="dark">This is a dark themed card.</ThemedCard>
 
-      <h2>Composite</h2>
+      <h2>🧩 Composite</h2>
       <Menu
         items={[
           { label: 'Home' },
@@ -28,18 +28,18 @@ export const App = () => {
         ]}
       />
 
-      <h2>Decorator</h2>
+      <h2>🎨 Decorator</h2>
       <LoggedButton label="Click Me" />
 
-      <h2>Facade</h2>
+      <h2>🎛️ Facade</h2>
       <button onClick={loadUser}>Load User</button>
       {user && <pre>{JSON.stringify(user, null, 2)}</pre>}
 
-      <h2>Flyweight</h2>
+      <h2>🎯 Flyweight</h2>
       <FlyweightButton label="Save" color="green" />
       <FlyweightButton label="Delete" color="red" />
 
-      <h2>Proxy</h2>
+      <h2>🛡️ Proxy</h2>
       <LazyComponent load={() => import('./structural/proxy/HeavyComponent')} />
     </div>
   );

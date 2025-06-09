@@ -26,32 +26,32 @@ export const App = () => {
   return (
     <ThemeProvider>
       <div style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
-        <h1>Creational Patterns in React</h1>
+        <h1>📦 Creational Patterns in React</h1>
 
         <section>
-          <h2>Factory Method</h2>
+          <h2>🏭 Factory Method</h2>
           <ButtonFactory type="primary" label="Primary Button" />
           <ButtonFactory type="secondary" label="Secondary Button" />
         </section>
 
         <section>
-          <h2>Abstract Factory</h2>
+          <h2>🏗️ Abstract Factory</h2>
           {LightThemeFactory.createButton({ children: 'Light Button' })}
           {DarkThemeFactory.createCard({ children: 'Dark Card' })}
         </section>
 
         <section>
-          <h2>Builder</h2>
+          <h2>🔧 Builder</h2>
           <FormBuilder fields={fields} />
         </section>
 
         <section>
-          <h2>Prototype</h2>
+          <h2>🧬 Prototype</h2>
           <ClonedButton />
         </section>
 
         <section>
-          <h2>Singleton</h2>
+          <h2>🛰️ Singleton</h2>
           <ThemedComponent />
         </section>
       </div>
