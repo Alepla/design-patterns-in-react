@@ -55,7 +55,7 @@ If you're new to design patterns, follow this path:
 
 ## 🧠 Real-World Connections
 
-## 🔗 Real-World Usage of Patterns in React
+### 🔗 Real-World Usage of Patterns in React
 
 | Pattern Type | Pattern          | Real-World Example                                  |
 |--------------|------------------|-----------------------------------------------------|
