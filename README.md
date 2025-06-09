@@ -27,7 +27,7 @@ It focuses on learning and applying **Design Patterns** in modern **React (v18/1
 - [Flyweight](./docs/structural/flyweight.md)
 - [Proxy](./docs/structural/proxy.md)
 
-#### 🔄 Behavioral Patterns (to be added)
+#### 🔄 Behavioral Patterns
 - [Chain of Responsibility](./docs/behavioral/chain-of-responsability.md)
 - [Command](./docs/behavioral/command.md)
 - [Iterator](./docs/behavioral/iterator.md)
