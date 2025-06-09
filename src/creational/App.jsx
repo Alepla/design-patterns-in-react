@@ -22,7 +22,7 @@ const ThemedComponent = () => {
   );
 };
 
-const App = () => {
+export const App = () => {
   return (
     <ThemeProvider>
       <div style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
@@ -58,5 +58,3 @@ const App = () => {
     </ThemeProvider>
   );
 };
-
-export default App;
