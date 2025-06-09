@@ -28,16 +28,16 @@ It focuses on learning and applying **Design Patterns** in modern **React (v18/1
 - [Proxy](./docs/structural/proxy.md)
 
 #### 🔄 Behavioral Patterns (to be added)
-- Chain of Responsibility
-- Command
-- Iterator
-- Mediator
-- Memento
-- Observer
-- State
-- Strategy
-- Template Method
-- Visitor
+- [Chain of Responsibility](./docs/behavioral/chain-of-responsability.md)
+- [Command](./docs/behavioral/command.md)
+- [Iterator](./docs/behavioral/iterator.md)
+- [Mediator](./docs/behavioral/mediator.md)
+- [Memento](./docs/behavioral/memento.md)
+- [Observer](./docs/behavioral/observer.md)
+- [State](./docs/behavioral/state.md)
+- [Strategy](./docs/behavioral/strategy.md)
+- [Template Method](./docs/behavioral/template-method.md)
+- [Visitor](./docs/behavioral/visitor.md)
 
 ## 🛠️ How to contribute
 

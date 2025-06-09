@@ -9,13 +9,13 @@ You will also find **React (v18/19)** examples for practical implementation.
 - [Chain of Responsibility](./chain-of-responsability.md)
 - [Command](./command.md)
 - [Iterator](./iterator.md)
-- [Mediator](./)
-- [Memento](./)
-- [Observer](./)
-- [State](./)
-- [Strategy](./)
-- [Template Method](./)
-- [Visitor](./)
+- [Mediator](./mediator.md)
+- [Memento](./memento.md)
+- [Observer](./observer.md)
+- [State](./state.md)
+- [Strategy](./strategy.md)
+- [Template Method](./template-method.md)
+- [Visitor](./visitor.md)
 
 ## 🚀 React examples
 
