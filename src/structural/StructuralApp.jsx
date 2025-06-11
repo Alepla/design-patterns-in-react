@@ -5,9 +5,9 @@ import { LoggedButton } from './decorator/LoggedButton';
 import { useUserData } from './facade/useUserData';
 import { FlyweightButton } from './flyweight/FlyweightButton';
 import { LazyComponent } from './proxy/LazyComponent';
-import Menu from './composite/Menu';
+import { Menu } from './composite/Menu';
 
-export const App = () => {
+const StructuralApp = () => {
   const { user, loadUser } = useUserData();
 
   return (
@@ -40,7 +40,9 @@ export const App = () => {
       <FlyweightButton label="Delete" color="red" />
 
       <h2>🛡️ Proxy</h2>
-      <LazyComponent load={() => import('./structural/proxy/HeavyComponent')} />
+      <LazyComponent load={() => import('./proxy/LazyComponent')} />
     </div>
   );
 };
+
+export default StructuralApp;

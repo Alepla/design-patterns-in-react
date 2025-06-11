@@ -1,16 +1,16 @@
 import React from 'react';
-import ChainExample from './behavioral/chain-of-responsibility/ChainExample';
-import CommandExample from './behavioral/command/CommandExample';
-import IteratorExample from './behavioral/iterator/IteratorExample';
-import MediatorExample from './behavioral/mediator/MediatorExample';
-import MementoExample from './behavioral/memento/MementoExample';
-import ObserverExample from './behavioral/observer/ObserverExample';
-import StateExample from './behavioral/state/StateExample';
-import StrategyExample from './behavioral/strategy/StrategyExample';
-import TemplateMethodExample from './behavioral/template-method/TemplateMethodExample';
-import VisitorExample from './behavioral/visitor/VisitorExample';
+import { ChainExample } from './chain-of-responsibility/ChainExample';
+import { CommandExample } from './command/CommandExample';
+import { IteratorExample } from './iterator/IteratorExample';
+import { MediatorExample } from './mediator/MediatorExample';
+import { MementoExample } from './memento/MementoExample';
+import { ObserverExample } from './observer/ObserverExample';
+import { StateExample } from './state/StateExample';
+import { StrategyExample } from './strategy/StrategyExample';
+import { TemplateMethodExample } from './template-method/TemplateMethodExample';
+import { VisitorExample } from './visitor/VisitorExample';
 
-export const App = () => {
+const BehavioralApp = () => {
   return (
     <div style={{ padding: '2rem', fontFamily: 'Arial, sans-serif' }}>
       <h1>Behavioral Design Patterns in React</h1>
@@ -67,3 +67,5 @@ export const App = () => {
     </div>
   );
 };
+
+export default BehavioralApp
