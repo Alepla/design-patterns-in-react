@@ -1,28 +1,24 @@
 import React from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+import Layout from '@/components/Layout';
 
 const Home = React.lazy(() => import('@/pages/Home'));
-const CreationalApp = React.lazy(() => import('@/creational/CreationalApp'));
-const StructuralApp = React.lazy(() => import('@/structural/StructuralApp'));
-const BehavioralApp = React.lazy(() => import('@/behavioral/BehavioralApp'));
+const NotFound = React.lazy(() => import('@/pages/NotFound'));
+const CreationalApp = React.lazy(() => import('@/pages//creational/CreationalApp'));
+const StructuralApp = React.lazy(() => import('@/pages//structural/StructuralApp'));
+const BehavioralApp = React.lazy(() => import('@/pages//behavioral/BehavioralApp'));
 
 const App = () => {
   return (
-    <div style={{ padding: '1rem' }}>
-      <nav style={{ marginBottom: '1rem' }}>
-        <Link to="/">🏠 Home</Link> | <Link to="/creational">⚒️ Creational</Link> |{' '}
-        <Link to="/structural">🏗️ Structural</Link> | <Link to="/behavioral">🤝 Behavioral</Link>
-      </nav>
-
-      <React.Suspense fallback={<p>Loading...</p>}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/creational" element={<CreationalApp />} />
-          <Route path="/structural" element={<StructuralApp />} />
-          <Route path="/behavioral" element={<BehavioralApp />} />
-        </Routes>
-      </React.Suspense>
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="creational" element={<CreationalApp />} />
+        <Route path="structural" element={<StructuralApp />} />
+        <Route path="behavioral" element={<BehavioralApp />} />
+        <Route path="*" element={<NotFound />} />
+      </Route>
+    </Routes>
   );
 };
 
