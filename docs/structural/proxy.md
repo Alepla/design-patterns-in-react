@@ -4,9 +4,19 @@
 
 Provide a surrogate or placeholder for another object to control access to it.
 
+In React, a **Proxy** component wraps another component to manage or restrict access to it—commonly used for things like **authentication**, **authorization**, **logging**, or **lazy loading**.
+
+You create a **Higher-Order Component (HOC)** or wrapper that adds logic **before rendering** the actual component. This can be used to:
+
+- Check user permissions
+
+- Add logging/caching
+
+- Delay or defer loading
+
 ## 💡 Problem
 
-You need to control access to a component (e.g., authentication, permissions).
+You want to **protect or modify** access to a component without changing its original code. For example, only authenticated users should see certain pages or components.
 
 ## 📦 Example in React
 
@@ -23,12 +33,24 @@ const ProtectedDashboard = withAuth(Dashboard);
 <ProtectedDashboard />;
 ```
 
+## ✅ When to Use
+
+- In protected routes (e.g., /dashboard)
+
+- For conditionally rendering components based on user roles or data
+
+- To wrap components with logging, metrics, or error boundaries
+
 ## 🔍 Advantages
 
-- Adds control over access and behavior.
+- **Separation of concerns**: Access control is outside the component.
 
-- Enables logging, caching, and permissions.
+- **Security layer**: Prevents unauthorized use of components.
+
+- **Reusability**: The same proxy can wrap multiple components.
 
 ## 🚫 Disadvantages
 
-- Can introduce indirection and debugging complexity.
+- **Indirection**: Extra layer makes debugging a bit harder.
+
+- **Testing complexity**: Might require mocks/stubs for access checks.
