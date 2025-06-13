@@ -8,6 +8,16 @@ In React, this means enhancing a component’s behavior by wrapping it with reus
 
 The Decorator pattern in React is typically implemented using Higher-Order Components (HOCs) or wrapper components. These are functions that take a component and return an enhanced version of it.
 
+## 💡 Problem
+
+You want to extend or modify a component’s behavior without:
+
+- changing its source code,
+
+- creating multiple variations,
+
+- or duplicating logic across usages.
+
 ## 📦 Example in React
 
 ```jsx
@@ -25,13 +35,13 @@ const BorderedButton = withBorder(Button);
 
 ## ✅ When to Use
 
-When you want to extend or modify a component’s behavior without:
+- You want to add features like logging, styling, or behavior conditionally without touching the core component.
 
-- changing its source code,
+- You have cross-cutting concerns (e.g., analytics, error boundaries, theming) shared by many components.
 
-- creating multiple variations,
+- You prefer a functional approach using composition over inheritance.
 
-- or duplicating logic across usages.
+- You want enhancements to be easily removed or swapped without touching the underlying component code.
 
 ## 🔍 Advantages
 
