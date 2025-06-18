@@ -2,11 +2,13 @@
 
 ## 🧭 Definition
 
-The Singleton pattern ensures a class has only one instance and provides a global access point to it.
+The Singleton pattern ensures that a class or service has only one instance throughout the application and provides a global access point to it.
+
+In React, this often takes the form of a context provider or a shared module that holds state or logic accessible across components.
 
 ## 💡 Problem
 
-When you need exactly one instance of a class shared across your app.
+You need to share state or functionality (like theme, auth, or configuration) globally without recreating or duplicating it across components.
 
 ## 📦 Example in React
 
@@ -25,12 +27,26 @@ export const ThemeProvider = ({ children }) => {
 };
 ```
 
+## ✅ When to Use
+
+- You want only one instance of a service or state (e.g., theme, auth, locale).
+
+- You need to share state globally across unrelated components.
+
+- You want to avoid prop drilling and centralize control.
+
 ## 🔍 Advantages
 
-- Centralized access to a single instance.
+- Guarantees a single source of truth.
 
-- Global state management (like in React Context).
+- Promotes centralized, accessible state.
+
+- Simplifies coordination between different parts of the app.
 
 ## 🚫 Disadvantages
 
-- Can lead to hidden dependencies and tight coupling.
+- Can introduce hidden dependencies.
+
+- Makes components tightly coupled to global context.
+
+- Harder to test in isolation or override in specific scopes.
