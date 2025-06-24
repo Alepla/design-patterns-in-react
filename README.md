@@ -1,4 +1,4 @@
-# React Design Patterns - Creational, Structural, and Behavioral
+# React Design Patterns - Modern, Advanced & Classic
 
 ![MIT License](https://img.shields.io/badge/license-MIT-green.svg)
 ![React](https://img.shields.io/badge/React-18%2B-61DAFB?logo=react)
@@ -67,12 +67,12 @@ Deal with algorithms and the assignment of responsibilities between objects, imp
 
 ## 👣 Learning Path
 
-If you're new to design patterns, follow this path:
+Whether you're new to design patterns or looking to deepen your React expertise, here’s a suggested path:
 
-1. 🧱 Start with [SOLID Principles](./docs/solid-principles.md)
-2. 📦 Learn [Creational Patterns](./docs/creational/README.md)
-3. 🏗️ Explore [Structural Patterns](./docs/structural/README.md)
-4. 🔄 Finish with [Behavioral Patterns](./docs/behavioral/README.md)
+1.  **Start with Fundamentals:** Begin with [SOLID Principles](./docs/solid-principles.md) to lay a strong foundation.
+2.  **Explore Classic Patterns:** Dive into [Creational Patterns](./docs/creational/README.md), then [Structural Patterns](./docs/structural/README.md), and finally [Behavioral Patterns](./docs/behavioral/README.md).
+3.  **Master Advanced React:** Conclude with the [Advanced React Patterns](./docs/advanced/README.md) to understand modern React idioms.
+
 
 ## 🧠 Real-World Connections
 
