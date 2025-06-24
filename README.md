@@ -5,8 +5,10 @@
 ![Patterns](https://img.shields.io/badge/Design%20Patterns-23%20Total-blueviolet)
 ![Tests](https://img.shields.io/badge/Tests-Coming%20Soon-yellow)
 
-This project is a personal study based on the book *Dive Into Design Patterns* by Alexander Shvets.  
-It focuses on learning and applying **Design Patterns** in modern **React (v18/19)** projects, with practical code examples and Markdown documentation.
+This project is a personal study focused on learning and applying **Design Patterns** in modern **React (v18/19)** projects. It draws insights from both classic design patterns (based on *Dive Into Design Patterns* by Alexander Shvets) and advanced, idiomatic React patterns (inspired by *Advanced React* by Nadya Makarevich).
+
+You'll find practical code examples and Markdown documentation to guide your exploration.
+
 
 ## 📚 Contents
 
@@ -16,14 +18,29 @@ It focuses on learning and applying **Design Patterns** in modern **React (v18/1
 
 ### 🧩 Design Patterns
 
+---
+
+#### 💡 Advanced React Patterns
+Dive into patterns specifically tailored for building robust, performant, and maintainable React applications.
+
+- [Children as Props](./docs/advanced/children-as-props.md)
+
+---
+
 #### 🔨 Creational Patterns
+Focus on object creation mechanisms, designed to improve flexibility and reusability in your React components and logic.
+
 - [Factory Method](./docs/creational/factory-method.md)
 - [Abstract Factory](./docs/creational/abstract-factory.md)
 - [Builder](./docs/creational/builder.md)
 - [Prototype](./docs/creational/prototype.md)
 - [Singleton](./docs/creational/singleton.md)
 
+---
+
 #### 🏗️ Structural Patterns
+Concerned with how classes and objects are composed to form larger structures, promoting robust and adaptable designs.
+
 - [Adapter](./docs/structural/adapter.md)
 - [Bridge](./docs/structural/bridge.md)
 - [Composite](./docs/structural/composite.md)
@@ -32,8 +49,12 @@ It focuses on learning and applying **Design Patterns** in modern **React (v18/1
 - [Flyweight](./docs/structural/flyweight.md)
 - [Proxy](./docs/structural/proxy.md)
 
+---
+
 #### 🔄 Behavioral Patterns
-- [Chain of Responsibility](./docs/behavioral/chain-of-responsability.md)
+Deal with algorithms and the assignment of responsibilities between objects, improving flexibility in communication.
+
+- [Chain of Responsibility (Classic)](./docs/behavioral/chain-of-responsability.md)
 - [Command](./docs/behavioral/command.md)
 - [Iterator](./docs/behavioral/iterator.md)
 - [Mediator](./docs/behavioral/mediator.md)
@@ -57,15 +78,16 @@ If you're new to design patterns, follow this path:
 
 ### 🔗 Real-World Usage of Patterns in React
 
-| Pattern Type | Pattern          | Real-World Example                                  |
-|--------------|------------------|-----------------------------------------------------|
-| Creational   | Singleton        | `React.createContext()` for shared state            |
-| Creational   | Factory Method   | `styled-components` factory for styled buttons      |
-| Structural   | Decorator        | `higher-order components` (HOC)                     |
-| Structural   | Proxy            | `React.lazy` + `Suspense` for lazy-loading          |
-| Behavioral   | Observer         | `useEffect` + `useState` combo                      |
-| Behavioral   | State            | Local component state with `useState()`             |
-| Behavioral   | Memento          | Form history and undo/redo                          |
+| Pattern Type | Pattern               | Real-World Example                                                             |
+|--------------|-----------------------|--------------------------------------------------------------------------------|
+| Advanced     | Children as Props     | Flexible data providers or UI layout components (`<Modal>{() => ...}</Modal>`) |
+| Creational   | Singleton             | `React.createContext()` for shared state                                       |
+| Creational   | Factory Method        | `styled-components` factory for styled buttons                                 |
+| Structural   | Decorator             | `higher-order components` (HOC)                                                |
+| Structural   | Proxy                 | `React.lazy` + `Suspense` for lazy-loading                                     |
+| Behavioral   | Observer              | `useEffect` + `useState` combo                                                 |
+| Behavioral   | State                 | Local component state with `useState()`                                        |
+| Behavioral   | Memento               | Form history and undo/redo                                                     |
 
 ## 🛠️ How to contribute
 
