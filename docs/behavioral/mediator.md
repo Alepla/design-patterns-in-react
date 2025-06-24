@@ -2,7 +2,9 @@
 
 ## 🧭 Definition
 
-Defines an object that encapsulates how a set of objects interact, promoting loose coupling.
+The Mediator pattern defines an object that centralizes communication between a set of components, promoting loose coupling by preventing components from referring to each other explicitly.
+
+In React, this pattern is commonly implemented using context providers or state management systems that act as a hub for communication.
 
 ## 💡 Problem
 
@@ -25,12 +27,24 @@ const ChatMediator = ({ children }) => {
 };
 ```
 
+## ✅ When to Use
+
+- You want to avoid tight coupling between components that need to collaborate.
+
+- You have many-to-many communication (e.g. chat apps, event systems).
+
+- You want a centralized controller for interactions and data flow.
+
 ## 🔍 Advantages
 
-- Reduces direct dependencies.
+- Decouples components from each other.
 
-- Centralized communication.
+- Centralized logic makes behavior easier to modify or extend.
+
+- Encourages cleaner architecture in complex UIs.
 
 ## 🚫 Disadvantages
 
-- Mediator itself can become complex.
+- The mediator can become a bottleneck or "God object" if it grows too complex.
+
+- Can add an extra layer of indirection, making flow harder to trace in small apps.

@@ -2,7 +2,9 @@
 
 ## 🧭 Definition
 
-Captures and externalizes an object's internal state so it can be restored later.
+The Memento pattern captures and stores an object’s internal state so that it can be restored later — without violating encapsulation.
+
+In React, this pattern is especially useful for implementing undo/redo, time travel debugging, or restoring previous UI states.
 
 ## 💡 Problem
 
@@ -28,12 +30,24 @@ const useMemento = (initial) => {
 };
 ```
 
+## ✅ When to Use
+
+- You want to implement undo/redo features.
+
+- You need to track changes over time.
+
+- You want to restore previous states (e.g., form drafts, drawing tools).
+
 ## 🔍 Advantages
 
-- Easy undo/redo support.
+- Enables undo/redo and time travel behavior.
 
-- State tracking made simple.
+- Keeps past states isolated and restorable.
+
+- Useful for debugging or versioning state.
 
 ## 🚫 Disadvantages
 
-- Memory intensive if misused.
+- Memory intensive if state snapshots are large or too frequent.
+
+- Can grow complex if you add branching histories or timestamps.

@@ -2,7 +2,9 @@
 
 ## 🧭 Definition
 
-Lets you define new operations on objects without changing their classes.
+The Visitor pattern lets you define new operations on a group of objects without changing their structure. Instead of modifying the object classes themselves, you externalize the behavior into a visitor function or object.
+
+In React, this often shows up when rendering or transforming different kinds of elements based on their "type".
 
 ## 💡 Problem
 
@@ -22,12 +24,26 @@ const renderVisitor = (element) => {
 const Document = ({ elements }) => <>{elements.map(renderVisitor)}</>;
 ```
 
+## ✅ When to Use
+
+You have a collection of heterogeneous elements (e.g., blocks in a document, nodes in a tree).
+
+You want to perform multiple different operations on them (rendering, validation, export, etc.).
+
+You don’t want to modify the element structure every time you add a new operation.
+
 ## 🔍 Advantages
 
-- Clean separation of logic.
+- Clean separation between data and operations.
 
-- Easily extendable without touching object structure.
+- Easy to extend with new operations (e.g., render, export, validate) without touching the element data.
+
+- Encourages open/closed principle: open for extension, closed for modification.
 
 ## 🚫 Disadvantages
 
-- Breaks encapsulation if not carefully managed.
+- Can break encapsulation if operations need internal details.
+
+- Requires keeping operation logic synchronized with structure types.
+
+- Becomes harder to manage if element types grow too much.

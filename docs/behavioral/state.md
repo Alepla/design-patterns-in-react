@@ -2,7 +2,9 @@
 
 ## 🧭 Definition
 
-Allows an object to alter its behavior when its internal state changes.
+The State pattern allows an object to change its behavior when its internal state changes. It appears as if the object has changed its class.
+
+In React, this pattern is commonly implemented using useState or useReducer, allowing components to change their behavior based on current mode, phase, or status.
 
 ## 💡 Problem
 
@@ -29,12 +31,26 @@ const TrafficLight = () => {
 };
 ```
 
+## ✅ When to Use
+
+- You have mode-driven UIs (e.g., tabs, toggles, workflows).
+
+- Different states require different logic or UI.
+
+- You want to make state transitions explicit and manageable.
+
 ## 🔍 Advantages
 
-- Clean modeling of mode-dependent behavior.
+- Encapsulates mode-specific behavior.
 
-- Makes transitions explicit.
+- Makes UI more predictable by managing transitions clearly.
+
+- Improves readability when compared to deeply nested conditionals.
 
 ## 🚫 Disadvantages
 
-- Can lead to excessive state logic.
+- Can become complex if too many states or transitions are hard-coded.
+
+- Difficult to scale without a state machine or reducer abstraction.
+
+- Risk of scattered logic if state-specific behavior isn't well organized.

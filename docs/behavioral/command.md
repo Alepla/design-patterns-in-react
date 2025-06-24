@@ -2,7 +2,17 @@
 
 ## 🧭 Definition
 
-Encapsulates a request as an object, allowing parameterization of clients with queues, undo/redo, etc.
+The Command pattern encapsulates an action (or request) as an object. This allows you to:
+
+- Parameterize components with commands,
+
+- Queue or log actions,
+
+- Support undo/redo functionality,
+
+- Decouple the object that triggers the action from the one that performs it.
+
+
 
 ## 💡 Problem
 
@@ -38,12 +48,26 @@ const App = () => {
 };
 ```
 
+## ✅ When to Use
+
+- You want to decouple the component that initiates an action from the logic that performs it.
+
+- You need to queue, log, or undo user interactions.
+
+- You want to store actions for later execution (e.g. macros, replay systems).
+
 ## 🔍 Advantages
 
-- Great for undo/redo implementations.
+- Decouples logic execution from UI components.
 
-- Decouples sender from receiver.
+- Enables logging, undo/redo, and macro recording.
+
+- Commands are reusable and composable.
 
 ## 🚫 Disadvantages
 
-- Can introduce unnecessary complexity for simple actions.
+- Adds boilerplate for simple tasks.
+
+- May lead to overengineering in small apps.
+
+- Harder to follow flow if commands become too abstract or scattered.

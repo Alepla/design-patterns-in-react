@@ -2,7 +2,9 @@
 
 ## 🧭 Definition
 
-Provides a way to access elements of a collection sequentially without exposing its underlying structure.
+The Iterator pattern provides a way to access elements of a collection sequentially, without exposing its internal structure.
+
+In React, this often translates to controlled iteration through custom components or stateful logic—rather than relying on native array methods like .map().
 
 ## 💡 Problem
 
@@ -26,12 +28,24 @@ const ItemIterator = ({ items }) => {
 <ItemIterator items={["One", "Two", "Three"]} />
 ```
 
+## ✅ When to Use
+
+- You want to display items one at a time (e.g. slides, cards, quizzes).
+
+- You need custom iteration logic (e.g. skipping, filtering, lazy loading).
+
+- You want to decouple iteration from the collection structure.
+
 ## 🔍 Advantages
 
-- Encapsulates iteration logic.
+- Encapsulates iteration logic in a reusable component.
 
-- Cleaner access to collection items.
+- Useful for step-based UIs, like carousels or onboarding flows.
+
+- Makes it easier to add control (e.g. next, previous, pause).
 
 ## 🚫 Disadvantages
 
-- Not very useful for simple lists already iterable via .map().
+- May be overkill for basic rendering tasks (.map() is often simpler).
+
+- Adds extra state and logic to manage iteration manually.
